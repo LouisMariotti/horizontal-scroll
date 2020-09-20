@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(44, 44, 44);
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.outer-wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.images {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  height: 627.4px;
+  width: 1053.14px;
+  margin: 25px;
+  transition: all 0.5s ease-in-out;
+}
+
+.one:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+.two:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+.three:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+.four:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
